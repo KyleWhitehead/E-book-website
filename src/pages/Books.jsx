@@ -1,19 +1,27 @@
 import React, { useState } from "react";
-import { Book } from "../data";
+import Book from "../Components/UI/Book";
 
 const Books = ({ books: initialBooks }) => {
-    const {books, setBooks} = useState(initialBooks)
+    const [books, setBooks] = useState(initialBooks);
 
     function filterBooks(filter) {
         console.log(filter)
         if(filter === "LOW_TO_HIGH") {
-            setBooks(books.slice().sort((a, b) =>(a.salePrice|| a.originalPrice) - (b.salePrice || b.original.Price)))
+            setBooks(
+                initialBooks
+                .slice()
+                .sort((a, b) => (a.salePrice ?? a.originalPrice) - (b.salePrice ?? b.originalPrice))
+            )
         }
         if(filter === "HIGH_TO_LOW") {
-            setBooks(books.slice().sort((a, b) =>(b.salePrice|| b.originalPrice) - (a.salePrice || a.original.Price)))
+            setBooks(
+                initialBooks
+                .slice()
+                .sort((a, b) => (b.salePrice ?? b.originalPrice) - (a.salePrice ?? a.originalPrice))
+            )
         }
         if(filter === "RATING") {
-            setBooks(books.slice().sort((a, b) => b.rating - a.rating))
+            setBooks(initialBooks.slice().sort((a, b) => b.rating - a.rating))
         }
     }
     return (
@@ -34,7 +42,7 @@ const Books = ({ books: initialBooks }) => {
                             </select>
                         </div>
                          <div className="books">
-                            {Books.map(book => (
+                            {books.map(book => (
                              <Book book={book} key={book.id}/>
                             ))}
                          </div>

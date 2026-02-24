@@ -1,6 +1,10 @@
 import React from 'react';
 
 const Price = ({ salePrice, originalPrice }) => {
+    if (originalPrice === undefined || originalPrice === null) {
+        return null; // Don't render anything if price is not provided
+    }
+
     return (
         <div className="book__price">
             <div className="book__price">

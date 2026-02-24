@@ -2,6 +2,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 const Rating = ({ rating }) => {
+    if (!rating) {
+        return null; // Don't render anything if rating is not provided
+    }
+    
     return (
         <div className="book__rating">
             {
