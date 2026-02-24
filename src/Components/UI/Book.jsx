@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
-import Rating from "./Rating";
-import Price from "./Price";
+import Rating from "../UI/Rating";
+import Price from "../UI/Price";
+import { books } from "../../data";
 
 const Book = (book) => {
   return (
