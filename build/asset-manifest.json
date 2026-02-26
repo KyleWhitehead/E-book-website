@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/E-book-website/build/static/css/main.17cd3180.css",
-    "main.js": "/E-book-website/build/static/js/main.3c1b9709.js",
+    "main.js": "/E-book-website/build/static/js/main.e0396efc.js",
     "static/js/453.6465a6e1.chunk.js": "/E-book-website/build/static/js/453.6465a6e1.chunk.js",
     "static/media/Undraw_Books.svg": "/E-book-website/build/static/media/Undraw_Books.64f45ed25262241aba12eff6dcb25d88.svg",
     "static/media/Library.svg": "/E-book-website/build/static/media/Library.70d0a6a90c21c295982ded03f9ea8615.svg",
@@ -9,11 +9,11 @@
     "index.html": "/E-book-website/build/index.html",
     "static/media/wave.svg": "/E-book-website/build/static/media/wave.42edd5970e3619090a0f.svg",
     "main.17cd3180.css.map": "/E-book-website/build/static/css/main.17cd3180.css.map",
-    "main.3c1b9709.js.map": "/E-book-website/build/static/js/main.3c1b9709.js.map",
+    "main.e0396efc.js.map": "/E-book-website/build/static/js/main.e0396efc.js.map",
     "453.6465a6e1.chunk.js.map": "/E-book-website/build/static/js/453.6465a6e1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.17cd3180.css",
-    "static/js/main.3c1b9709.js"
+    "static/js/main.e0396efc.js"
   ]
 }
